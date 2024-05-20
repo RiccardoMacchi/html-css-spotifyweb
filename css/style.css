@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#menusinistra {
+    width: 250px;
+    height: calc(100vh - 100px);
+    background-color: black;
+    float: left;
+}
+
+#dispaly {
+    padding-top: 120px;
+    display: inline-block;
+    width: calc(100vw - 250px);
+    height: calc(100vh - 100px);
+    background-color: brown;
+    overflow-y: auto;
+}
+
+
+
+#player {
+    margin-top: -4px;
+    width: 100%;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+#upgrade {
+    position: fixed;
+    height: 75px;
+    width: 100%;
+    background-color: yellow;
+}
+
+.content {
+    width: 200px;
+    height: 200px;
+    background-color: antiquewhite;
+    margin-bottom: 10px;
+}
