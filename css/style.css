@@ -9,6 +9,9 @@ a {
     text-decoration: none;
 }
 
+img {
+    width: 100%;
+}
 
 /* Regole app */
 
@@ -34,18 +37,10 @@ a {
     z-index: 2;
 }
 
-
-
-
-footer {
-    height: 100px;
-    background-color: blueviolet;
-    z-index: 4;
-}
-
 /* Regole Navbar */
 
 #navbar {
+    position: relative;
     width: 250px;
     max-height: calc(100vh - 100px);
     background-color: black;
@@ -57,19 +52,23 @@ footer {
 }
 
 #playlist {
-    min-height: calc(70% - 40px);
+    max-height: calc(60% - 40px);
     overflow-y: auto;
     background-color: aqua;
     overflow: auto;
 }
 
 #navmenu {
-    min-height: calc(20% - 30px);
+    max-height: calc(20% - 30px);
     background-color: blue;
 }
 
 #userprofile{
-    min-height: calc(10% - 30px);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-height: calc(20% - 30px);
     background-color: white;
 }
 
@@ -86,21 +85,115 @@ footer {
     
 }
 
-.display h2 {
-    text-align: left;
-}
+
 /* Regole canzoni riprodotte */
 .music {
     max-width: calc((100% / 6) - 10px);
-    /* min-width: calc(15% - 10px); */
     background-color: antiquewhite;
 }
 
-.lastsong {
+.displaysong {
     flex-wrap: wrap;
     gap: 10px;
 }
 
-.music img {
-    width: 100%;
+
+
+.wrapper span,
+.wrapper h2 {
+    text-align: left;
+    margin: 15px auto;
 }
+
+.wrapper {
+    margin: 20px 0px;
+}
+
+
+/* Regole artisti più popolari */
+
+.wrapper:last-child img {
+    border-radius: 50%;
+}
+
+
+/* Regole footer */
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: auto 15px;
+    height: 100px;
+    background-color: blueviolet;
+    z-index: 4;
+}
+/* Sezione Brano */
+#brano {
+    width: calc(20% - 100px);
+    /* Debug */
+    background-color: #454950;
+}
+
+footer img {
+    margin: 0 15px;
+    max-width: 70px;
+    float: left;
+}
+
+#brano h3,
+#brano span {
+    color: white;
+}
+
+/* icone footer */
+#footericon {
+    width: 10%;
+    /* Debug */
+    background-color: antiquewhite;
+}
+
+
+/* Regole player */
+
+#playnow {
+    width: 40%;
+    text-align: center;
+    /* Debug */
+    background-color: rgb(50, 112, 112);
+}
+
+#menuplayer {
+    width: 70%;
+    margin: 0 auto;
+    /* Debug */
+    background-color: yellow;
+}
+
+#playerprogress {
+    /* Debug */
+    background-color: purple;
+}
+
+
+/* Regole impostazioni */
+#footersetting{
+    width: 30%;
+    /* Debug */
+    background-color: black;
+}
+
+#progressbar {
+    display: inline-block;
+    border: 1px white;
+    background-color: white;
+    width: 70%;
+}
+
+#percprogrss{
+    width: 15%;
+    height: 5px;
+    background-color: yellow;
+}
+
