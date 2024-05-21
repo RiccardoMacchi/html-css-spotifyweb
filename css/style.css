@@ -37,7 +37,7 @@ i {
     height: calc(100vh - 80px);
     background-color: #141922;
     z-index: 1;
-    padding-top: 90px;
+    padding-top: 75px;
     overflow-y: scroll;
 }
 /* Regole upgrade */
@@ -54,16 +54,17 @@ i {
 }
 
 #upgrade a {
-    border-radius: 10px;
+    border-radius: 25px;
     margin-right: 20px;
     border: 1px solid white;
     color: white;
-    padding: 10px 15px;
+    padding: 10px 25px;
 }
 
 /* Regole logo */
 
 #logoimg {
+    padding-left: 20px;
     height: 60px;
     position: relative;
 }
@@ -71,7 +72,7 @@ i {
 #logoimg img {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 35%;
     transform: translate(-50%, -50%);
     width: 60%;
 }
@@ -86,7 +87,7 @@ i {
     z-index: 3;
 }
 
-#navmenu img {
+#navbar a img {
     width: 25px;
     margin-right: 5px;
     float: left;
@@ -96,6 +97,7 @@ i {
 #navbar i {
     font-size: 50px;
     float: left;
+    margin-left: 0;
 }
 
 #navbar a {
@@ -109,11 +111,17 @@ i {
     display: table;
 }
 
+/* Nav menu */
+
+#navmenu {
+    padding-left: 15px;
+}
+
 /* Crea Playlist */
 #playlist {
     max-height: calc(60% - 40px);
     overflow-y: auto;
-    overflow: auto;
+    padding-left: 15px;
 }
 
 #playlist a {
@@ -121,21 +129,46 @@ i {
 }
 
 #playlist h3{
+    margin: 15px auto;
     color: #ffff;
     font-size: 1.5rem;
 }
 
 #playlist ul {
     line-height: 30px;
+    list-style: none;
 }
+
+/* Profilo barra nav */
 
 #userprofile{
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
-    max-height: calc(20% - 30px);
-    background-color: white;
+    padding-left: 15px;
+    background-color: black;
+    z-index: 4;
+}
+
+#userprofile .line {
+    width: 90%;
+    height: 2px;
+    background-color: #969696;
+    margin-bottom: 10px;
+}
+
+
+#userprofile a:last-child img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #717171;
+    margin-right: 10px;
+}
+
+#userprofile h3 {
+    color: #ffff;
 }
 
 /* Regole Display */
@@ -283,20 +316,25 @@ footer img {
 #footersetting i {
     color: #ffff;
     margin: 0 auto;
-    margin-right: 10px;
+    margin-right: 5px;
     font-size: 1.2rem;
 }
+
 
 
 #footersetting .progressbar {
     width: 50%;
 }
 
+#footersetting span {
+    text-align: right;
+}
 
 
+/* MEDIA QUERY */
 
-
-@media screen and (max-width:1024px){
+/* Schermo Desktop e più grande*/
+@media screen and (max-width:1280px){
     *{
         font-size: 0.8rem;
     }
@@ -304,4 +342,70 @@ footer img {
     h2 {
         font-size: 1.1rem;
     }
+}
+
+/* Aggiustamenti */
+@media screen and (max-width:1024px) {
+/* aggiustamenti menu footer */
+    footer i{
+        font-size: 0.9rem;
+    }
+
+    #footersetting i {
+        font-size: 0.9rem;
+    }
+
+    footer img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #playnow {
+        width: 40%;
+    }
+    
+    #brano {
+        width: calc(20% - 50px);
+    }
+
+    #footersetting {
+        width: 32%;
+    }
+
+
+}
+
+/* Schermo Tablet */
+
+@media screen and (max-width:810px) {
+    .music {
+        max-width: calc((100% / 4) - 10px);
+    }
+
+    #navbar {
+        width: 200px;
+    }
+
+    #display {
+        width: calc(100vw - 200px);
+    }
+
+    #menuplayer i {
+        margin-right: 0;
+    }
+
+    .progressbar {
+        width: 60%;
+    }
+}
+
+
+/* Schermo piccolo Tablet */
+
+@media screen and (max-width:654px) 
+
+/* Schermo Telefono */
+
+@media screen and (max-width:480px) {
+    
 }
