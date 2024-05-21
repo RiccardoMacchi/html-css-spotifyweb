@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
     color: #454950;
 }
 
@@ -11,6 +12,12 @@ a {
 
 img {
     width: 100%;
+}
+
+h4,
+h2 {
+    color: white;
+    margin: 15px 0;
 }
 
 /* Regole app */
@@ -23,18 +30,30 @@ img {
 #display {
     width: calc(100vw - 250px);
     height: calc(100vh - 100px);
-    background-color: brown;
+    background-color: #141922;
     z-index: 1;
     padding-top: 150px;
     overflow-y: scroll;
 }
+/* Regole upgrade */
 
-#update {
+#upgrade {
     position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     height: 100px;
     width: 100%;
-    background-color: yellow;
+    background-color: #080b12;
     z-index: 2;
+}
+
+#upgrade a {
+    border-radius: 10px;
+    margin-right: 20px;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 15px;
 }
 
 /* Regole Navbar */
@@ -43,7 +62,7 @@ img {
     position: relative;
     width: 250px;
     max-height: calc(100vh - 100px);
-    background-color: black;
+    background-color: #000000;
     z-index: 3;
 }
 
@@ -59,8 +78,31 @@ img {
 }
 
 #navmenu {
-    max-height: calc(20% - 30px);
-    background-color: blue;
+    /* max-height: calc(20% - 30px); */
+    background-color: black;
+}
+
+
+#navmenu ul:first-child{
+    list-style-image: url(../img/home.svg);
+    margin-left: 10px;
+    padding-left: 25px;
+    color: white;
+}
+
+#navmenu ul li:nth-child(2){
+    list-style-image: url(../img/search.svg);
+    color: white;
+}
+
+#navmenu ul li:last-child {
+    list-style-image: url(../img/libreria.svg);
+}
+
+
+::marker{
+    font-size: 50px;
+    color: white;
 }
 
 #userprofile{
@@ -89,7 +131,7 @@ img {
 /* Regole canzoni riprodotte */
 .music {
     max-width: calc((100% / 6) - 10px);
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 }
 
 .displaysong {
@@ -99,7 +141,7 @@ img {
 
 
 
-.wrapper span,
+.wrapper h5,
 .wrapper h2 {
     text-align: left;
     margin: 15px auto;
@@ -126,8 +168,8 @@ footer {
     justify-content: space-between;
     padding: auto 15px;
     height: 100px;
-    background-color: blueviolet;
-    z-index: 4;
+    background-color: #282828;
+    z-index: 400;
 }
 /* Sezione Brano */
 #brano {
@@ -179,13 +221,16 @@ footer img {
 
 /* Regole impostazioni */
 #footersetting{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     width: 30%;
     /* Debug */
     background-color: black;
 }
 
+
 #progressbar {
-    display: inline-block;
     border: 1px white;
     background-color: white;
     width: 70%;
