@@ -241,8 +241,7 @@ footer img {
     float: left;
 }
 
-#brano h3,
-#brano span {
+#brano h3 {
     color: white;
 }
 
@@ -377,7 +376,7 @@ footer img {
 
 /* Schermo Tablet */
 
-@media screen and (max-width:810px) {
+@media screen and (max-width:840px) {
     .music {
         max-width: calc((100% / 4) - 10px);
     }
@@ -402,7 +401,35 @@ footer img {
 
 /* Schermo piccolo Tablet */
 
-@media screen and (max-width:654px) 
+@media screen and (max-width:654px) {
+
+    .music {
+        max-width: calc((100% / 2) - 10px);
+    }
+
+    #navbar {
+        width: 175px;
+    }
+
+    #display {
+        width: calc(100vw - 175px);
+    }
+
+    #menuplayer{
+        width: 100%;
+    }
+
+    #footersetting .progressbar {
+        width: 40%;
+    }
+
+    .progressbar {
+        width: 50%;
+        margin: 0 10px;
+    }
+
+
+}
 
 /* Schermo Telefono */
 
