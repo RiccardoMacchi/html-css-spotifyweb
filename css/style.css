@@ -209,6 +209,7 @@ i {
     text-align: center;
 }
 
+
 #display nav ul li{
     line-height: 20px;
     display: inline-block;
@@ -529,8 +530,6 @@ footer img {
 
 }
 
-
-
 /* Regole effetti Hover */
 
 /* Regole effetti hover su canzoni */
@@ -588,7 +587,7 @@ a:hover {
 
 
 .greenline {
-    display: none;
+    opacity: 0;
     height: 2px;
     width: 40%;
     margin: 0 auto;
@@ -604,7 +603,7 @@ a:hover {
 }
 
 #display nav ul li:hover .greenline {
-    display: block;
+    opacity: 1;
 }
 
 #playlist a:hover i{
