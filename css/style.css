@@ -13,6 +13,9 @@ a {
 img {
     width: 100%;
 }
+svg {
+    width: 100%;
+}
 
 h4,
 h2 {
@@ -88,11 +91,15 @@ i {
     z-index: 3;
 }
 
-#navbar a img {
+#navbar a svg {
     width: 25px;
     margin-right: 5px;
     float: left;
     margin-bottom: 3%;
+}
+
+#navbar a svg path {
+    fill: #4c4c4c;
 }
 
 #navbar i {
@@ -149,7 +156,7 @@ i {
     width: 100%;
     padding-left: 15px;
     background-color: black;
-    z-index: 4;
+    max-height: 20%;
 }
 
 #userprofile .line {
@@ -160,7 +167,7 @@ i {
 }
 
 
-#userprofile a:last-child img{
+#userprofile a:last-child svg{
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -301,6 +308,7 @@ footer img {
 #menuplayer {
     width: 70%;
     margin: 0 auto;
+    height: 25px;
     /* Debug */
     /* background-color: yellow; */
 }
@@ -542,9 +550,13 @@ a:hover {
     color: #ffff;
 }
 
+#navbar a:hover svg path {
+    fill: #ffff;
+}
+
 /* Effetto hover profilo navbar */
 
-#userprofile a:last-child:hover img {
+#userprofile a:last-child:hover svg {
     background-color: #d8d8d8;
 }
 
@@ -577,4 +589,29 @@ a:hover {
 
 #display nav ul li:hover .greenline {
     display: block;
+}
+
+#playlist a:hover i{
+    color: #ffff;
+}
+
+
+/* EFFETTI FOOTER E SVG CAMBIO COLORE */
+
+#brano span:hover {
+    color: #ffff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer i {
+    cursor: pointer;
+}
+
+#playnow i:hover {
+    font-size: 1.5rem;
+}
+
+#footericon i:hover {
+    color: #ffff;
 }
