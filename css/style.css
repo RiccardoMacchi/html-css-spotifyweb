@@ -30,6 +30,7 @@ i {
 .flex-container {
     display: flex;
     justify-content: flex-start;
+    overflow: hidden;
 }
 
 #display {
@@ -503,7 +504,77 @@ footer img {
         font-size: 0.7rem;
     }
 
+}
 
 
 
+/* Regole effetti Hover */
+
+/* Regole effetti hover su canzoni */
+.wrapperimg{
+    position: relative;
+}
+
+.playnow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.playnow i {
+    font-size: 2.5rem;
+    color: #ffff;
+}
+
+.music:hover img{
+    opacity: 0.6;
+}
+
+.music:hover .playnow {
+    display: block;
+}
+
+/* Effetti hover Ancor */
+
+a:hover {
+    color: #ffff;
+}
+
+/* Effetto hover profilo navbar */
+
+#userprofile a:last-child:hover img {
+    background-color: #d8d8d8;
+}
+
+/* Effetto hover bottone upgrade */
+
+/* Non convince troppo */
+
+#upgrade a:hover{
+    padding: 15px 45px;
+    margin-right: 0px;
+    font-size: 1.1rem;
+}
+
+
+.greenline {
+    display: none;
+    height: 2px;
+    width: 40%;
+    margin: 0 auto;
+    background-color: #7db72b;
+}
+
+.greenlinevertical {
+    float: left;
+    margin-left: -15px;
+    height: 25px;
+    width: 3px;
+    background-color: #7db72b;
+}
+
+#display nav ul li:hover .greenline {
+    display: block;
 }
