@@ -589,10 +589,11 @@ a:hover {
 .greenline {
     opacity: 0;
     height: 2px;
-    width: 40%;
+    width: 60%;
     margin: 0 auto;
     background-color: #7db72b;
 }
+
 
 .greenlinevertical {
     float: left;
@@ -602,9 +603,7 @@ a:hover {
     background-color: #7db72b;
 }
 
-#display nav ul li:hover .greenline {
-    opacity: 1;
-}
+
 
 #playlist a:hover i{
     color: #ffff;
@@ -640,4 +639,37 @@ footer i {
 
 .progressbar:hover .percprogrss {
     background-color: greenyellow;
+}
+
+
+
+/* Effetti hover menu display */
+#display nav ul li:hover .greenline {
+    animation: light 2s forwards;
+}
+
+@keyframes light {
+    form {
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+
+/* MODIFICA TUTTE LE BARRE DI SCROLL */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+/* Contenitore barra di scrollo */
+*::-webkit-scrollbar-track {
+    background-color: #a3a3a3;
+    border-radius: 10px;
+}
+/* Barra di scrollo */
+*::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #ffff;
 }
